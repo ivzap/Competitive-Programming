@@ -6,7 +6,7 @@
 
 To do this, `climbingLeaderboard()` first initializes an empty list `ranks` and a list `results` to store the rankings of the player after each game. It then loops through the elements of ranked and generates a list `ranks` such that `ranks[i]` is the ranking of the player with score `ranked[i]`. It does this by assigning `ranks[0]` a value of 1 and then, for each subsequent element `ranked[i]`, if `ranked[i]` is the same as the previous element `ranked[i-1]`, it assigns `ranks[i]` the same value as `ranks[i-1]`, otherwise it assigns `ranks[i]` a value of `ranks[i-1] + 1`.
 
-Then it loops through the elements of player and, for each score score, it checks three conditions:
+Then it loops through the elements of `player` and, for each score, it checks three conditions:
 
 - If score is greater than the highest score in `ranked`, it appends 1 to `results` (since the player would have the highest ranking in this case).
 - If score is less than the lowest score in `ranked`, it appends the last element of `ranks` plus 1 to `results` (since the player would have a ranking one greater than the lowest ranking in this case).

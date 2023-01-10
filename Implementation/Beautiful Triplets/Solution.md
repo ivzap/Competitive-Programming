@@ -1,4 +1,4 @@
-## `Problem Link:`
+## `Problem Link:` https://www.hackerrank.com/challenges/beautiful-triplets/problem
 
 While not evident at first, all we need is a bit of basic Combinatorics, and a Hashmap. It is important to consider that the problem only asks for the `number of triplets` which, if you are the seasoned competative programmer, screams some kind of mathematical 'trick'. 
 
@@ -19,7 +19,7 @@ _        _        _
 ...
 
 ```
-In a perfect sequence, that increases by 1 in each element, we simply maintain a sliding window of three elements that are `d` indices apart.
+In a perfect sequence, that increases by 1 in each element, we simply maintain a sliding window of three elements that are `d` indices apart, to get a triplet with the differences of `d`.
 Unfortunately we dont have perfect sequences like this for our problem, many elements are missing at times. To adjust, simply just find where that next element would be resulting in a element difference of `d`. 
 
 The algorithm goes as follows:
